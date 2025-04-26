@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world-deployment
+  name: hello-world
 spec:
   replicas: 1
   selector:
@@ -13,8 +13,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - name: nginx
+      - name: hello-world
         image: ranjitrupnawar/hello-world
         ports:
         - containerPort: 80
-
